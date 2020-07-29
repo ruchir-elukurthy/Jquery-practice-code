@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("button").on("click", function () {
+          var clicked_id = $(this).attr("id");
+          alert(clicked_id);
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" class="btn btn-default" id="a">#btn1</button>
+    <button type="button" class="btn btn-default" id="b">#btn2</button>
+    <button type="button" class="btn btn-default" id="c">#btn3</button>
+    <button type="button" class="btn btn-default" id="d">#btn4</button>
+  </body>
+</html>
