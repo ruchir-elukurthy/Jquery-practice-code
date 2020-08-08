@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("td").on("click", function () {
+          if ($(this).text() === "Ruchir") {
+            $(this).css("color", "red");
+          }
+          if ($(this).text() === "Rohan") {
+            $(this).css("color", "blue");
+          }
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Student</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Ruchir</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Rohan</td>
+        <td>23</td>
+      </tr>
+    </table>
+  </body>
+</html>
