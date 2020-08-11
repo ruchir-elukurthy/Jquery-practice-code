@@ -8,10 +8,10 @@
       $(function () {
         $("td").on("click", function () {
           if ($(this).text() === "Ruchir") {
-            $(this).css("color", "red");
+            $("td:contains('19')").css("color", "red");
           }
           if ($(this).text() === "Rohan") {
-            $(this).css("color", "blue");
+            $("td:contains('23')").css("color", "blue");
           }
         });
       });
